@@ -1,0 +1,54 @@
+:root {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  color: #191f28;
+  color-scheme: light;
+  background: #ffffff;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+img {
+  max-width: 100%;
+}
+
+#app,
+#root,
+my-element {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* 태블릿·데스크톱에서는 가운데에 폰 너비 화면을 띄워요. */
+@media (min-width: 481px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f2f4f6;
+  }
+
+  #app,
+  #root,
+  my-element {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 1px #e5e8eb, 0 8px 40px rgb(0 0 0 / 6%);
+  }
+}
